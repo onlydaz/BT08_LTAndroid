@@ -1,19 +1,19 @@
 package vn.iotstar.bt_slideimages;
 
-public class Images {
-    private int id;
-    private int position;
-    private String avatar;
+import java.io.Serializable;
 
-    public int getId() {
-        return id;
+public class Images implements Serializable {
+    private int imageId;
+
+    public Images(int imageId) {
+        this.imageId = imageId;
     }
 
-    public int getPosition() {
-        return position;
+    public int getImageId() {
+        return imageId;
     }
 
-    public String getAvatar() {
-        return avatar;
+    public void setImageId(int imageId) {
+        this.imageId = imageId;
     }
 }

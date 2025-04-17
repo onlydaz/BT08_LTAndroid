@@ -2,21 +2,29 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager2"
+    <TextView
+        android:id="@+id/tvTitle"
         android:layout_width="match_parent"
-        android:layout_height="220dp"/>
+        android:layout_height="50dp"
+        android:background="#8000FF"
+        android:text="ViewFlipper Anh CircleIndicator"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpage2"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
 
     <me.relex.circleindicator.CircleIndicator3
-        android:id="@+id/circleIndicator"
+        android:id="@+id/circle_indicator3"
+        app:ci_drawable="@drawable/bg"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_margin="5dp"
-        app:ci_gravity="center"/>
+        app:ci_gravity="right|center" />
 
 </LinearLayout>
